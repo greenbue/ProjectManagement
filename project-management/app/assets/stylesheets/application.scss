@@ -1,2 +1,26 @@
-@import "bootstrap";
 @import "font-awesome";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.form-control, label {
+  margin: 10px auto;
+}
+
+label.email, label.password {
+    font-size: 110%;
+}
+
+.login-box {
+    border: black 2px solid;
+    padding: 0 25px 25px;
+}
+
+.actions .btn {
+  margin: auto 15px
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: #777;
+}
