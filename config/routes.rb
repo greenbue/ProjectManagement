@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show, :edit, :update]
 
+  resources :jobs
+  resources :user_jobs
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
