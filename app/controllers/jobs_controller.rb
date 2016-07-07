@@ -5,4 +5,8 @@ class JobsController < ApplicationController
   def show
     @jobs = Job.all;
   end
+
+  def details
+  end
+
 end

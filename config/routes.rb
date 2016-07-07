@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  get 'jobs/details'
+
   devise_for :users
   get 'welcome/index'
-
+  get 'jobs/show/details' => "jobs#details", as: "dets"
+  get 'jobs/show' => "jobs#show", as: "show"
+  get 'jobs/new' => "jobs#new", as: "new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
