@@ -1,0 +1,14 @@
+Select what Job you like to do.
+<% @jobs.each do |job| %>
+  <h3>Job <%= job.id %></h3>
+  <div>
+    <p><strong>Title:</strong> <%= job.title %></p>
+    <p><strong>Description:</strong> <%= job.job_description %></p>
+    <p><strong>Hours Allocated:</strong> <%= job.hours_allocated %> </p>
+    <%= link_to "View Job", job_path(job) %>
+  </div>
+<% end %>
+
+<div>
+  <%#= link_to "Job 1 details", dets_path %>
+</div>
