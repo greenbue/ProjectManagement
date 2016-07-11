@@ -1,3 +1,5 @@
+#Displays all the jobs available.
+
 Select what Job you like to do.
 <% @jobs.each do |job| %>
   <h3>Job <%= job.id %></h3>
@@ -5,7 +7,8 @@ Select what Job you like to do.
     <p><strong>Title:</strong> <%= job.title %></p>
     <p><strong>Description:</strong> <%= job.job_description %></p>
     <p><strong>Hours Allocated:</strong> <%= job.hours_allocated %> </p>
-    <%= link_to "View Job", job_path(job) %>
+    <%= link_to "View Job", job_path(job) %> #Link is broken and needs to be fixed.
+                                             #Directs to jobs/show
   </div>
 <% end %>
 

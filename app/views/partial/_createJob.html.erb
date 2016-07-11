@@ -1,0 +1,21 @@
+<%#= CSS for the job creation located in jobs/new. %>
+
+<%= form_for(@job) do |f| %>
+  <div class="field">
+    <%= f.label :job_description %><br>
+    <%= f.text_field :job_description %>
+  </div>
+  <div class="field">
+    <%= f.label :job_title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :hours %><br>
+    <%= f.number_field :hours_allocated %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit  "Create the job" %>
+  </div>
+
+<% end %>
